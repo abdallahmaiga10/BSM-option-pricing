@@ -1,19 +1,13 @@
 # Dividend Adjustment Effects on Black–Scholes–Merton Option Pricing Accuracy
 
-Replication repository for the revised empirical study of dividend omission in short-maturity U.S. equity call-option pricing.
-
-The project compares two otherwise identical European Black–Scholes–Merton specifications:
+The project compares two otherwise identical Black–Scholes–Merton specifications:
 
 - **BSM with `q = 0`**: dividends are ignored;
 - **BSM with `q > 0`**: the observed continuous dividend yield is included.
 
-The revised analysis was designed in response to peer-review concerns about circularity from option-implied volatility, stale option observations, market-price definition, cross-stock comparability, American-versus-European exercise style, and statistical significance.
-
 ## Main interpretation
 
-The theoretical direction of the dividend effect is not the empirical contribution: for a positive dividend yield, the dividend-adjusted European call value is lower than the otherwise identical zero-dividend value. The empirical questions are **how large that omission effect is** and **whether correcting it moves model prices closer to observed market prices**.
-
-These are distinct statements. In the revised analysis, the dividend-sensitivity approximation tracks the exact BSM omission effect almost perfectly, but incorporating dividends does **not** mechanically guarantee lower empirical pricing error once volatility is estimated independently and stale observations are removed.
+The theoretical direction of the dividend effect is not the empirical contribution: for a positive dividend yield, the dividend-adjusted call value is lower than the otherwise identical zero-dividend value. The empirical questions are **how large that omission effect is** and **whether correcting it moves model prices closer to observed market prices**.
 
 ## Repository structure
 
